@@ -37,13 +37,13 @@ cask 'cleanmymac' do
                   "~/Library/Preferences/com.macpaw.CleanMyMac#{version.major}.plist",
                 ]
   else
-    version '3.6.0,1480586543'
-    sha256 '246b9e2884f6c8dfe48f4aecd5b425d810b605aa168a9fb917823265cc5abcf6'
+    version '3.7.2,1485541584'
+    sha256 '1b20fb4f90bf658bbfeec74563a0a09da6d93079cf7a7d373ee1d853580804ae'
 
     # devmate.com/com.macpaw.CleanMyMac3 was verified as official when first introduced to the cask
     url "https://dl.devmate.com/com.macpaw.CleanMyMac#{version.major}/#{version.major_minor_patch}/#{version.after_comma}/CleanMyMac3-#{version.major_minor_patch}.zip"
     appcast "https://updates.devmate.com/com.macpaw.CleanMyMac#{version.major}.xml",
-            checkpoint: 'be5823f5bda323fed627fac31b523cd81e3572e4bd43ef2ff132512263607912'
+            checkpoint: 'b7ac47088efe17ca2857257ac702e0d4a37b06ed5a7e7b84ede2e3b8174227f6'
     app "CleanMyMac #{version.major}.app"
 
     postflight do
@@ -60,16 +60,20 @@ cask 'cleanmymac' do
                   "/Library/PrivilegedHelperTools/com.macpaw.CleanMyMac#{version.major}.Agent",
                   "/Users/Shared/CleanMyMac #{version.major}",
                   "/private/var/run/com.macpaw.CleanMyMac#{version.major}.Agent.socket",
+                  "~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.macpaw.cleanmymac#{version.major}.sfl",
+                  "~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.macpaw.cleanmymac#{version.major}.scheduler.sfl",
                   "~/Library/Application Support/CleanMyMac #{version.major}",
                   "~/Library/Application Support/CleanMyMac #{version.major} Menu",
                   "~/Library/Caches/CleanMyMac #{version.major}",
+                  "~/Library/Caches/com.macpaw.CleanMyMac#{version.major}",
+                  "~/Library/Caches/com.macpaw.CleanMyMac#{version.major}.Menu",
                   "~/Library/Logs/CleanMyMac #{version.major}.log",
+                  "~/Library/Logs/com.macpaw.CleanMyMac#{version.major}",
                   "~/Library/Preferences/com.macpaw.CleanMyMac-#{version.major}-Helper.plist",
                   "~/Library/Preferences/com.macpaw.CleanMyMac#{version.major}.KnowledgeBase.plist",
                   "~/Library/Preferences/com.macpaw.cleanmymac#{version.major}.menu.plist",
+                  "~/Library/Preferences/com.macpaw.CleanMyMac#{version.major}.Scheduler.plist",
                   "~/Library/Preferences/com.macpaw.CleanMyMac#{version.major}.plist",
-                  "~/Library/Caches/com.macpaw.CleanMyMac#{version.major}",
-                  "~/Library/Caches/com.macpaw.CleanMyMac#{version.major}.Menu",
                 ]
   end
 

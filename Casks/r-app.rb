@@ -1,5 +1,5 @@
 cask 'r-app' do
-  if MacOS.version < :mavericks
+  if MacOS.version <= :mountain_lion
     version '3.2.1'
     sha256 '88b9a20af00a916f3902ccac83098643b95a2801eb4775d38130b26871323a3f'
     url "https://cloud.r-project.org/bin/macosx/R-#{version}-snowleopard.pkg"
@@ -11,10 +11,10 @@ cask 'r-app' do
     pkg "R-#{version}.pkg"
   end
 
+  appcast 'https://www.r-project.org/',
+          checkpoint: '97043eed2b030ed4fa7ffd3509b6f9edc2ce9aaa1608ea3bd35ab421ab98f843'
   name 'R'
   homepage 'https://www.r-project.org/'
-
-  depends_on macos: '>= :snow_leopard'
 
   uninstall pkgutil: [
                        'org.r-project.R.maverics.fw.pkg',

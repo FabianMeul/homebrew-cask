@@ -1,6 +1,6 @@
 cask 'macupdate-desktop' do
-  version '6.1.4'
-  sha256 'd7fba63bb4aa1c65ae826314b626ec947fbbd63c0baa2fd0136a4e72447adb5a'
+  version '6.1.6'
+  sha256 'c929ef05f4d292b079c5538bb0c1283706ab845d7d0c342ac4b73b83dfb65489'
 
   url "http://cdn.macupdate.com/MacUpdateDesktop#{version}.zip"
   appcast 'https://www.macupdate.com/desktop/updates.xml',

@@ -1,11 +1,11 @@
 cask 'itch' do
-  version '22.2.0'
-  sha256 '3c93a7b1c5d880c819e75c0bf31277261ea71b5585817a0966976867de8fecee'
+  version '23.2.1'
+  sha256 'c8084a059c07b51e2e61b37f8b9827e441c4732cf8542fa964efea4e3a57a849'
 
   # github.com/itchio/itch was verified as official when first introduced to the cask
   url "https://github.com/itchio/itch/releases/download/v#{version}/itch-mac.dmg"
   appcast 'https://github.com/itchio/itch/releases.atom',
-          checkpoint: 'eca59b0f515cf26edd52c85607aa6469efff497affd10816103123a63259572e'
+          checkpoint: '37aadbc92c1f8f8f4503759660a53dcec1337d759e3ddb4964bf3e35e1fc7a25'
   name 'itch'
   homepage 'https://itch.io/app'
 
